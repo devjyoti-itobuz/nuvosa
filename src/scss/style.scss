@@ -342,17 +342,38 @@ $card-border-radius: 1px;
 
 .plan-card {
     padding: 20px 10px;
+    transition: transform 0.6s ease;
+    background: white;
 
     @media (min-width: 700px) {
-        padding: 60px 20px;
+        padding: 40px 20px;
     }
 
+    .top-title {
+        font-size: 20px;
+        color: #6F77F1;
+
+    }
 
     &:hover {
-        background: url('../assets/images/Mask\ group.png') no-repeat center;
-        transform: scale(1.1);
+        background: url('../assets/images/Mask group.png') no-repeat center #6068df;
+        transform: scale(1.05);
 
-        
+        .top-title {
+            color: white;
+        }
+
+        .feature-title {
+            color: white;
+        }
+
+        .feature-description {
+            color: white;
+        }
+
+        a {
+            background: #FAD725;
+        }
     }
 
     .feature-title {
@@ -377,6 +398,8 @@ $card-border-radius: 1px;
             font-size: 15px;
         }
 
+        font-weight: 300;
+        margin-bottom: 8px;
         color: $text-muted;
 
         &:hover {
@@ -386,11 +409,12 @@ $card-border-radius: 1px;
 }
 
 .team-card {
-    // padding: 20px 50px;
+    padding: 0 20px;
     transition: transform 0.3s ease;
     border: 1px solid #EFEFEF;
 
     &:hover {
+        border: 0;
         box-shadow: 0px 34px 50px -17px #0216051A;
     }
 }
