@@ -21,7 +21,7 @@
     }
 
     .optimise-bg {
-        background: url('../assets/images/Group\ 679.png') no-repeat center;
+        background: url('../assets/images/Group\ 680\ \(2\).png') no-repeat center;
     }
 
     .icon-bg {
@@ -33,7 +33,7 @@
     }
 
     .stats-bg {
-        background: url('../assets/images/Group\ 680 (1).png') no-repeat center;
+        background: url('../assets/images/speed.png') no-repeat center;
     }
 
     .plan-bg {
@@ -41,7 +41,11 @@
     }
 
     .team-bg {
-        background: url('../assets/images/Group\ 680 (1).png') no-repeat center;
+        background: url('../assets/images/Group\ 679\ copy.png') no-repeat center;
+    }
+
+    .client-bg {
+        background: url('../assets/images/Group\ 680\ \(1\).png') no-repeat center;
     }
 }
 
@@ -237,7 +241,7 @@ $avatar-size: 36px;
             border-radius: 50%;
             object-fit: cover;
             margin-right: -10px;
-            border: 2px solid #fff;
+            border: 1px solid #fff;
             transition: transform 0.2s ease-in-out;
 
             &:hover {
@@ -373,7 +377,7 @@ $card-border-radius: 1px;
 
     &:hover {
         box-shadow: 0px 10px 14px 2px #0E113C08;
-        border-bottom: darkblue 4px solid;
+        border-bottom: #717AE0 4px solid;
     }
 }
 
@@ -385,6 +389,51 @@ $card-border-radius: 1px;
         box-shadow: 0px 34px 50px -17px #0216051A;
     }
 
+}
+
+.highlighted {
+    padding: 20px 10px;
+    background: url('../assets/images/Mask group.png') no-repeat center #6c76ff;
+    transform: scale(1.05);
+
+    .top-title {
+        font-size: 20px;
+        color: white;
+    }
+
+    .feature-title {
+        color: white;
+    }
+
+    .feature-description {
+        color: white;
+    }
+
+    a {
+        background: #FAD725;
+        border: none;
+    }
+
+    .feature-title {
+        font-size: 48px;
+
+        @media (max-width: 1000px) {
+            font-size: 24px;
+        }
+
+        font-weight: 500;
+    }
+
+    .feature-description {
+        font-size: 17px;
+
+        @media (max-width: 1000px) {
+            font-size: 15px;
+        }
+
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
 }
 
 .plan-card {
@@ -811,8 +860,9 @@ $animation-duration: 30s;
 // Testimonial cards
 .testimonial-card {
     background: url('../assets/images/“.png') no-repeat;
+    background-origin: content-box;
     border-radius: $border-radius;
-    padding: 35px;
+    padding: 25px;
     width: 550px;
     flex-shrink: 0;
     border: 1px solid #EFEFEF;
@@ -831,6 +881,7 @@ $animation-duration: 30s;
     }
 
     .testimonial-text {
+        padding: 10px;
         font-size: 17px;
         color: #828282;
         line-height: 1.6;
