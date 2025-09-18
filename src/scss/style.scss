@@ -45,6 +45,10 @@ $search-btn-bg: #FAD725;
 
 a {
     @media (min-width: 1000px) {
+        font-size: 20px !important;
+    }
+
+    @media (min-width: 1500px) {
         font-size: 24px !important;
     }
 }
@@ -106,8 +110,12 @@ $avatar-size: 36px;
             font-size: 3rem;
         }
 
-        @media (min-width: 1000px) {
+        @media (min-width: 1200px) {
             font-size: 4.5rem;
+        }
+
+        @media (min-width: 1500px) {
+            font-size: 5.5rem;
         }
 
         .expert-tag {
@@ -293,7 +301,7 @@ $primary-color: #6c757d;
 $secondary-color: #007bff;
 $card-border-radius: 1px;
 
-.optimisation-section {
+.card-section {
     background-color: #fff;
     padding-top: 80px;
     padding-bottom: 80px;
@@ -302,7 +310,7 @@ $card-border-radius: 1px;
 .section-title {
     font-size: 3rem;
     font-weight: 500;
-    // color: #333;
+    color: #212528;
     margin-bottom: 1rem;
 
     @media (max-width: 700px) {
@@ -312,15 +320,20 @@ $card-border-radius: 1px;
     @media (min-width: 700px) and (max-width: 1000px) {
         font-size: 2rem;
     }
+
+    @media (min-width: 1500px) {
+        font-size: 55px;
+    }
 }
 
 .section-subtitle {
-    font-size: 20px;
+    font-size: 18px;
 
     @media (max-width: 700px) {
         font-size: 15px;
     }
 
+    font-weight: 400;
     color: $text-muted;
     margin-bottom: 3rem;
 }
@@ -361,7 +374,7 @@ $card-border-radius: 1px;
     }
 
     &:hover {
-        background: url('../assets/images/Mask group.png') no-repeat center #6068df;
+        background: url('../assets/images/Mask group.png') no-repeat center #6c76ff;
         transform: scale(1.05);
 
         .top-title {
@@ -378,6 +391,7 @@ $card-border-radius: 1px;
 
         a {
             background: #FAD725;
+            border: none;
         }
     }
 
@@ -413,6 +427,22 @@ $card-border-radius: 1px;
     }
 }
 
+.img-container {
+    width: 100%;
+    border-radius: 50%;
+    display: flex;
+    margin: 20px 0;
+
+    img {
+        max-width: 100%;
+        height: auto;
+
+        @media (max-width: 550px) {
+            width: 75%;
+        }
+    }
+}
+
 .icon-container {
     width: 100%;
     border-radius: 50%;
@@ -423,8 +453,8 @@ $card-border-radius: 1px;
         max-width: 100%;
         height: auto;
 
-        @media (max-width: 1000px) {
-            width: 75%;
+        @media (max-width: 550px) {
+            width: 75px;
         }
     }
 
@@ -438,7 +468,7 @@ $card-border-radius: 1px;
     }
 
     .bg-img {
-        @media (max-width: 1000px) {
+        @media (max-width: 1500px) {
             display: none;
         }
     }
@@ -753,10 +783,10 @@ $animation-duration: 30s;
 .testimonial-card {
     background: url('../assets/images/“.png') no-repeat;
     border-radius: $border-radius;
-    padding: 50px;
+    padding: 35px;
     width: 550px;
     flex-shrink: 0;
-    @include card-shadow;
+    border: 1px solid #EFEFEF;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
@@ -835,7 +865,7 @@ $animation-duration: 30s;
 
         &.active {
             background-color: rgba(0, 0, 255, 0.8);
-            transform: scale(1.3);
+            transform: scale(1.2);
         }
     }
 }
@@ -892,7 +922,7 @@ $animation-duration: 30s;
 }
 
 .team-card {
-    padding: 30px;
+    padding: 10%;
     transition: transform 0.3s ease;
     border: 1px solid #EFEFEF;
 
@@ -904,8 +934,8 @@ $animation-duration: 30s;
             color: #6F77F1;
         }
 
-        .social-icon {
-            fill: #6F77F1;
+        .social-icon:hover {
+            filter: brightness(0) saturate(100%) invert(53%) sepia(59%) saturate(4851%) hue-rotate(223deg) brightness(100%) contrast(95%);
         }
     }
 
@@ -927,9 +957,5 @@ $animation-duration: 30s;
         font-weight: 300;
         margin-bottom: 20px;
         color: #A3A2A2;
-
-        &:hover {
-            color: white;
-        }
     }
 }
