@@ -1,3 +1,4 @@
+@use 'var';
 // Import all of Bootstrap’s CSS
 @import "bootstrap/scss/bootstrap";
 
@@ -53,13 +54,8 @@
     color: #6F77F1 !important;
 }
 
-$red: #e74c3c;
-$active-link-color: #8f9bff;
-$text-color: #212529;
-$search-btn-bg: #FAD725;
-
 .nav-link {
-    color: $text-color;
+    color: var.$text-color;
     position: relative;
     font-weight: 300;
     transition: all 0.2s;
@@ -82,7 +78,7 @@ a {
 }
 
 .all-btn {
-    background-color: $search-btn-bg;
+    background-color: var.$search-btn-bg;
 }
 
 .blue-btn {
@@ -98,7 +94,7 @@ a {
         height: 65px;
     }
 
-    background-color: $search-btn-bg;
+    background-color: var.$search-btn-bg;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,11 +113,6 @@ a {
         padding: 0.5rem 1rem;
     }
 }
-
-$yellow: #ffd600;
-$text-muted: #828282;
-$font-primary: 'Poppins', sans-serif;
-$avatar-size: 36px;
 
 .hero-section {
     background: white;
@@ -170,7 +161,7 @@ $avatar-size: 36px;
     }
 
     p {
-        color: $text-muted;
+        color: var.$text-muted;
         font-size: 15px;
 
         @media (min-width: 768px) {
@@ -179,13 +170,13 @@ $avatar-size: 36px;
     }
 
     .btn-warning {
-        background-color: $yellow;
-        border-color: $yellow;
+        background-color: var.$yellow;
+        border-color: var.$yellow;
         color: #000;
 
         &:hover {
-            background-color: darken($yellow, 5%);
-            border-color: darken($yellow, 5%);
+            background-color: darken(var.$yellow, 25%);
+            border-color: darken(var.$yellow, 25%);
         }
     }
 
@@ -305,7 +296,7 @@ $avatar-size: 36px;
                 font-size: 15px;
             }
 
-            color: $text-muted;
+            color: var.$text-muted;
         }
 
         .arrow-icon {
@@ -329,10 +320,6 @@ $avatar-size: 36px;
         }
     }
 }
-
-$primary-color: #6c757d;
-$secondary-color: #007bff;
-$card-border-radius: 1px;
 
 .card-section {
     background-color: #fff;
@@ -367,7 +354,7 @@ $card-border-radius: 1px;
     }
 
     font-weight: 400;
-    color: $text-muted;
+    color: var.$text-muted;
     margin-bottom: 3rem;
 }
 
@@ -497,7 +484,7 @@ $card-border-radius: 1px;
 
         font-weight: 300;
         margin-bottom: 10px;
-        color: $text-muted;
+        color: var.$text-muted;
 
         &:hover {
             color: white;
@@ -571,7 +558,7 @@ $card-border-radius: 1px;
         font-size: 15px;
     }
 
-    color: $text-muted;
+    color: var.$text-muted;
 }
 
 .feature-card-high {
@@ -642,16 +629,6 @@ $card-border-radius: 1px;
         margin-top: 30px;
     }
 }
-
-$primary-text-color: #333; // Darker text for titles
-$secondary-text-color: #6c757d; // Muted text for descriptions
-$card-bg: #fff;
-$card-border-radius: 1px;
-$card-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-
-$social-media-bg: #fcebeb; // Light red
-$email-marketing-bg: #e2f4e8; // Light green
-$seo-optimization-bg: #fcf8e3; // Light yellow
 
 .custom-left-img {
     max-width: 100%;
@@ -735,7 +712,7 @@ $seo-optimization-bg: #fcf8e3; // Light yellow
 
         p {
             font-size: 1rem;
-            color: $text-muted;
+            color: var.$text-muted;
 
             @media (min-width: 1400px) {
                 white-space: nowrap;
@@ -764,33 +741,13 @@ $seo-optimization-bg: #fcf8e3; // Light yellow
     }
 }
 
-$background-color: #ffffff;
-$card-background: #ffffff;
-$text-primary: #000000;
-$text-secondary: #666666;
-$text-dark: #333333;
-$border-radius: 1px;
-$animation-duration: 30s;
-
-// Mixins
-@mixin card-shadow {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-@mixin flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
 .testimonials-section {
-    background-color: $background-color;
+    background-color: var.$background-color;
     padding: 40px 0;
     overflow: hidden;
 
     .testimonials-title {
-        color: $text-primary;
+        color: var.$text-primary;
         font-size: 48px;
         font-weight: 600;
         margin-bottom: 20px;
@@ -798,7 +755,7 @@ $animation-duration: 30s;
     }
 
     .testimonials-subtitle {
-        color: $text-primary;
+        color: var.$text-primary;
         font-size: 16px;
         margin-bottom: 60px;
         opacity: 0.7;
@@ -826,19 +783,19 @@ $animation-duration: 30s;
 
     &::before {
         left: 0;
-        background: linear-gradient(to right, $background-color, transparent);
+        background: linear-gradient(to right, var.$background-color, transparent);
     }
 
     &::after {
         right: 0;
-        background: linear-gradient(to left, $background-color, transparent);
+        background: linear-gradient(to left, var.$background-color, transparent);
     }
 }
 
 .marquee-container {
     display: flex;
     width: max-content;
-    animation: marquee $animation-duration linear infinite;
+    animation: marquee var.$animation-duration linear infinite;
     gap: 30px;
     padding: 0 50px;
 
@@ -861,7 +818,7 @@ $animation-duration: 30s;
 .testimonial-card {
     background: url('../assets/images/“.png') no-repeat;
     background-origin: content-box;
-    border-radius: $border-radius;
+    border-radius: var.$border-radius;
     padding: 25px;
     width: 550px;
     flex-shrink: 0;
@@ -912,14 +869,14 @@ $animation-duration: 30s;
         justify-content: center;
 
         .client-name {
-            color: $text-dark;
+            color: var.$text-dark;
             font-size: 16px;
             font-weight: 600;
             margin-bottom: 2px;
         }
 
         .client-title {
-            color: $text-secondary;
+            color: var.$text-secondary;
             font-size: 14px;
             margin: 0;
             text-align: center;
