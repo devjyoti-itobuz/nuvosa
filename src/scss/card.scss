@@ -6,6 +6,8 @@
     padding-bottom: 80px;
 }
 
+
+
 .icon-card {
     padding: 10px 30px;
     transition: transform 0.3s ease;
@@ -14,7 +16,19 @@
         box-shadow: 0px 34px 50px -17px #0216051A;
     }
 
+    .btn-warning {
+        background-color: var.$yellow;
+        border-color: #FAD725;
+        color: #000;
+
+        &:hover {
+            background-color: darken(var.$yellow, 10%);
+            border-color: darken(var.$yellow, 10%);
+        }
+    }
 }
+
+
 
 .highlighted-card {
     padding: 20px 10px;
@@ -60,6 +74,9 @@
         margin-bottom: 10px;
     }
 }
+
+
+
 
 .plan-card {
     padding: 20px 10px;
@@ -193,11 +210,13 @@
     font-size: 17px;
 
     @media (max-width: 1000px) {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     color: var.$text-muted;
 }
+
+
 
 .feature-card-high {
     background: url('../assets/images/Mask\ group.png') no-repeat center;
@@ -207,6 +226,8 @@
         transform: scale(1.1);
     }
 }
+
+
 
 .marketing-card {
     transition: transform 0.2s ease-in-out;
@@ -219,6 +240,8 @@
         flex-direction: column;
     }
 }
+
+
 
 .icon-wrapper {
     border-radius: 50%;
@@ -242,6 +265,9 @@
         justify-content: flex-start;
     }
 }
+
+
+
 
 .team-card {
     padding: 10%;
@@ -274,7 +300,7 @@
     }
 
     .feature-description {
-        font-size: 15px;
+        font-size: 14px;
 
         font-weight: 300;
         margin-bottom: 20px;
