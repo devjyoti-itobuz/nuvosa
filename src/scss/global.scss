@@ -22,31 +22,31 @@
     }
 
     .optimise-bg {
-        background: url('../assets/images/Group\ 680\ \(2\).png') no-repeat center;
+        background: url('../assets/images/bg/optimise-bg.png') no-repeat center;
     }
 
     .icon-bg {
-        background: url('../assets/images/0.png') no-repeat center;
+        background: url('../assets/images/bg/icon-bg.png') no-repeat center;
     }
 
     .seo-bg {
-        background: url('../assets/images/Group\ 680.png') no-repeat;
+        background: url('../assets/images/bg/seo-bg.png') no-repeat;
     }
 
     .stats-bg {
-        background: url('../assets/images/speed.png') no-repeat center;
+        background: url('../assets/images/bg/speed.png') no-repeat center;
     }
 
     .plan-bg {
-        background: url('../assets/images/Group\ 681.png') no-repeat center;
+        background: url('../assets/images/bg/plan-bg.png') no-repeat center;
     }
 
     .team-bg {
-        background: url('../assets/images/Group\ 679\ copy.png') no-repeat center;
+        background: url('../assets/images/bg/team-bg.png') no-repeat;
     }
 
     .client-bg {
-        background: url('../assets/images/Group\ 680\ \(1\).png') no-repeat center;
+        background: url('../assets/images/bg/client-bg.png') no-repeat center;
     }
 }
 
@@ -91,16 +91,6 @@
     font-weight: 400;
     color: var.$text-muted;
     margin-bottom: 3rem;
-}
-
-.feature-card {
-    padding: 20px;
-    transition: transform 0.3s ease;
-
-    &:hover {
-        box-shadow: 0px 10px 14px 2px #0E113C08;
-        border-bottom: #717AE0 4px solid;
-    }
 }
 
 .custom-left-img {
