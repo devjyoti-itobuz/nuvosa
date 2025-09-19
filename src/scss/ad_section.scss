@@ -2,31 +2,41 @@
 
 .ad-section {
     background: url('../assets/images/Group\ 676.png') center/cover no-repeat;
+
     position: relative;
     overflow: hidden;
 
     .container {
         position: relative;
         z-index: 1;
-        /* Using clamp for fluid padding, replacing the 1000px media query */
-        padding: clamp(1rem, 2vw, 3rem);
+        padding: 3rem;
+
+        @media (max-width: 1000px) {
+            padding: 1rem;
+        }
     }
 
     h2 {
-        /*
-         * Replaces the 700px and 1000px media queries.
-         * Min size: 1.5rem (for 700px and below)
-         * Preferred: calc(1.5rem + 2.5vw) (scales between breakpoints)
-         * Max size: 3.5rem (for 1000px and above)
-         */
-        font-size: clamp(1.5rem, calc(1.5rem + 2.5vw), 3.5rem);
+        font-size: 3.5rem;
         line-height: 1.2;
         font-weight: 500;
+
+        @media (max-width: 700px) {
+            font-size: 1.5rem;
+        }
+
+        @media (min-width: 700px) and (max-width: 1000px) {
+            font-size: 2rem;
+        }
     }
 
     p {
-        /* Replaces the 700px media query */
-        font-size: clamp(15px, calc(1rem + 0.5vw), 20px);
+        font-size: 20px;
+
+        @media (max-width: 700px) {
+            font-size: 15px;
+        }
+
         color: #828282;
         margin-bottom: 3rem;
     }
@@ -38,18 +48,12 @@
     }
 
     a {
-        /* Replaces the 1000px and 1500px media queries */
-        font-size: clamp(16px, calc(1rem + 0.5vw), 24px) !important;
-    }
+        @media (min-width: 1000px) {
+            font-size: 20px !important;
+        }
 
-    .btn-warning {
-        background-color: var.$yellow;
-        border-color: #FAD725;
-        color: #000;
-
-        &:hover {
-            background-color: darken(var.$yellow, 10%);
-            border-color: darken(var.$yellow, 10%);
+        @media (min-width: 1500px) {
+            font-size: 24px !important;
         }
     }
 }
