@@ -23,6 +23,7 @@
                 width: 125px;
                 height: 125px;
             }
+
         }
 
         .service-title {
@@ -33,7 +34,7 @@
             }
 
             @media (min-width: 1500px) {
-                font-size: 2.5rem;
+                font-size: 38px;
             }
 
             line-height: 1.5;
@@ -41,10 +42,10 @@
         }
 
         .service-desc {
-            font-size: 17px;
+            font-size: 14px;
 
-            @media (max-width: 1000px) {
-                font-size: 14px;
+            @media (min-width: 1000px) {
+                font-size: 17px;
             }
 
             color: var.$text-muted;
@@ -58,7 +59,7 @@
         }
     }
 
-    @media (max-width: 575.98px) {
+    @media (max-width: 576px) {
         .service-card {
             .service-title {
                 font-size: 1.1rem;

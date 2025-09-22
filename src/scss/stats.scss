@@ -12,12 +12,12 @@
 
     .stat-box {
         h2 {
-            font-size: 4rem;
+            font-size: 2rem;
             font-weight: 600;
             margin: 0;
 
-            @media (max-width: 1000px) {
-                font-size: 2rem;
+            @media (min-width: 1000px) {
+                font-size: 4rem;
             }
 
             color: #666565;
