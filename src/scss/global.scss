@@ -1,123 +1,200 @@
-@use 'var';
+@use "var";
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .custom-font-size {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .font-20 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 @media (min-width: 1800px) {
-    .container {
-        width: 1650px !important;
-        max-width: 1650px !important;
-    }
+  .container {
+    width: 1690px !important;
+    max-width: 1690px !important;
+  }
 
-    .optimise-bg {
-        background: url('../assets/images/bg/optimise-bg.png') no-repeat center;
-    }
+  .optimise-bg {
+    background: url("../assets/images/bg/optimise-bg.png") no-repeat center;
+  }
 
-    .icon-bg {
-        background: url('../assets/images/bg/icon-bg.png') no-repeat center;
-    }
+  .icon-bg {
+    background: url("../assets/images/bg/icon-bg.png") no-repeat center;
+  }
 
-    .seo-bg {
-        background: url('../assets/images/bg/seo-bg.png') no-repeat;
-    }
+  .seo-bg {
+    background: url("../assets/images/bg/seo-bg.png") no-repeat;
+  }
 
-    .stats-bg {
-        background: url('../assets/images/bg/speed.png') no-repeat center;
-    }
+  .stats-bg {
+    background: url("../assets/images/bg/speed.png") no-repeat center;
+  }
 
-    .plan-bg {
-        background: url('../assets/images/bg/plan-bg.png') no-repeat center;
-    }
+  .plan-bg {
+    background: url("../assets/images/bg/plan-bg.png") no-repeat center;
+  }
 
-    .team-bg {
-        background: url('../assets/images/bg/team-bg.png') no-repeat;
-    }
+  .team-bg {
+    background: url("../assets/images/bg/team-bg.png") no-repeat;
+  }
 
-    .client-bg {
-        background: url('../assets/images/bg/client-bg.png') no-repeat center;
-    }
+  .client-bg {
+    background: url("../assets/images/bg/client-bg.png") no-repeat center;
+  }
 }
 
 .text-bluish {
-    color: #6F77F1 !important;
+  color: #6f77f1 !important;
 }
 
 .all-btn {
-    background-color: #FAD725;
+  background-color: #fad725;
 }
 
 .blue-btn {
-    background-color: #6F77F1;
+  background-color: #6f77f1;
 }
 
 .section-title {
-    font-size: 3rem;
-    font-weight: 500;
-    color: #212528;
-    margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #212528;
+  margin-bottom: 1rem;
 
-    @media (max-width: 700px) {
-        font-size: 1.5rem;
-    }
+  @media (max-width: 700px) {
+    font-size: 1.5rem;
+  }
 
-    @media (min-width: 700px) and (max-width: 1000px) {
-        font-size: 2rem;
-    }
+  @media (min-width: 700px) and (max-width: 1000px) {
+    font-size: 2rem;
+  }
 
-    @media (min-width: 1500px) {
-        font-size: 55px;
-    }
+  @media (min-width: 1500px) {
+    font-size: 55px;
+  }
 }
 
 .section-subtitle {
+  font-size: 15px;
+
+  @media (min-width: 700px) {
     font-size: 18px;
+  }
 
-    @media (max-width: 700px) {
-        font-size: 15px;
-    }
+  font-weight: 400;
+  color: var.$text-muted;
+  margin-bottom: 3rem;
+}
 
-    font-weight: 400;
-    color: var.$text-muted;
-    margin-bottom: 3rem;
+.section-subtitl {
+  font-size: 15px;
+
+  @media (min-width: 700px) {
+    font-size: 20px;
+  }
+
+  font-weight: 400;
+  color: var.$text-muted;
+  margin-bottom: 3rem;
 }
 
 .custom-left-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
 
-    @media (max-width: 1100px) {
-        display: none;
-    }
+  @media (max-width: 1100px) {
+    display: none;
+  }
 }
 
 .btn-warning {
-    background: #FAD725 !important;
-    color: #000;
+  background: #fad725 !important;
+  color: #000;
 
-    &:hover {
-        background-color: darken(var.$yellow, 10%) !important;
-        border-color: darken(var.$yellow, 10%) !important;
-    }
+  &:hover {
+    background-color: darken(var.$yellow, 10%) !important;
+    border-color: darken(var.$yellow, 10%) !important;
+  }
 }
 
 .btn-primary {
-    background: #6F77F1 !important;
+  background: #6f77f1 !important;
 
-    @media (max-width: 1000px) {
-        font-size: 16px !important;
-    }
+  @media (max-width: 1000px) {
+    font-size: 16px !important;
+  }
+}
+
+.p-693 {
+  max-width: 693px;
+}
+
+.p-827 {
+  max-width: 827px;
+}
+
+.p-900 {
+  max-width: 900px;
+}
+
+.p-400 {
+  max-width: 400px;
+}
+
+.p-413 {
+  max-width: 413px !important;
+}
+
+.ip::placeholder {
+  color: #b6b6b6 !important;
+}
+
+#customToast.toast-animated {
+  position: fixed;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  opacity: 0;
+  animation: slideInUp 0.5s ease-out forwards, stayMid 2s ease-in 0.5s forwards,
+    slideOutUp 0.5s ease-in 2.5s forwards;
+}
+
+@keyframes slideInUp {
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes stayMid {
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutUp {
+  to {
+    bottom: -30px;
+    opacity: 0;
+  }
+}
+
+#customToast.toast-static {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  opacity: 1;
 }
